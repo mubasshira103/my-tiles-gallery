@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation';
 import React from 'react';
 
 const RegisterPage = () => {
-  const router=useRouter()
+  const router = useRouter();
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -29,7 +29,7 @@ const RegisterPage = () => {
 
     if (data) {
       alert('Signup successful');
-      router.push('login')
+      router.push('login');
     }
   };
   // const { data, error } = await authClient.signUp.email({
@@ -39,6 +39,11 @@ const RegisterPage = () => {
   //     image: "https://example.com/image.png",
   //     callbackURL: "https://example.com/callback",
   // });
+  const handlGoogleSignIn = async () => {
+    await authClient.signIn.social({
+      provider: 'google',
+    });
+  };
   return (
     <div className="flex justify-center items-center my-5">
       <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -101,6 +106,7 @@ const RegisterPage = () => {
 
             {/* Google Button */}
             <Button
+              onClick={handlGoogleSignIn}
               variant="secondary"
               className="w-full flex items-center justify-center gap-2 border hover:bg-gray-50 transition"
             >

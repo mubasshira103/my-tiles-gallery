@@ -28,6 +28,14 @@ const LoginPage = () => {
         alert('Signup successful');
       }
     };
+
+     const handlGoogleSignIn = async () => {
+    await authClient.signIn.social({
+        provider: 'google'
+    })
+  }
+
+
   return (
     <div className="flex justify-center items-center my-5">
       <div className="card  bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -81,6 +89,7 @@ const LoginPage = () => {
             </Button>
 
             <Button
+            onClick={handlGoogleSignIn }
               variant="secondary"
               className="w-full flex items-center justify-center gap-2 border hover:bg-gray-50 transition"
             >
