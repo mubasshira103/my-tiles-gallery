@@ -1,13 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
-import bannerImg from '../asses/tiles2.jpeg'
+// import bannerImg from '../asses/5.jpg'
+import bannerImg from '../asses/tile.jpeg'
 
 const Banner = () => {
   return (
-
-    <div className="container mx-auto  px-4">
+// bg-linear-to-br from-[#D4EDED] to-[#DFDCFD]
+    <div className=" container mx-auto  px-4">
       <div
-        className="hero min-h-[50vh] sm:min-h-[55vh] md:min-h-[65vh] rounded-2xl overflow-hidden relative shadow-xl"
+        className="hero min-h-[50vh] sm:min-h-[55vh] md:min-h-[80vh] rounded-2xl overflow-hidden relative shadow-xl"
         style={{
           backgroundImage: `url(${bannerImg.src})`,
           backgroundPosition: 'center',
