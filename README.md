@@ -4,51 +4,26 @@
 
 
 ​🔗 Project Links
-​Live Deployment: [Insert Vercel/Render Live Link Here]
-​GitHub Repository: [Insert Repository Link Here]
+​Live Deployment: [(https://my-tiles-gallery-five.vercel.app)]
+
+
+​GitHub Repository: [(https://github.com/mubasshira103/my-tiles-gallery)]
 
 
 ​🎯 Purpose
 
 ​The primary goal of this project is to provide an interactive platform for interior designers and homeowners to explore high-quality tile patterns. It demonstrates the implementation of Next.js App Router, secure authentication using BetterAuth, and seamless data fetching with MongoDB.
 
-​✨ Key Features
 
-​1. Dynamic Home Experience
+​✨  Key Features
+- **Fully Responsive:** Beautifully adapts to mobile, tablet, and desktop screens.
+- **Dynamic Search:** Includes a search bar to find tiles instantly by their title.
+- **Authentication:** Features secure Email-Password login and Google Social login using BetterAuth.
+- **My Profile & Update:** Authenticated users can view and update their profile name and image URL.
+- **Private Route Protection:** Secure routes for viewing tile details and profile management.
 
-​Hero Banner: A bold "Discover Your Perfect Aesthetic" section with a quick CTA.
 
-​Live Marquee: A scrolling announcement bar for new arrivals and featured patterns.
 
-​Featured Section: Showcases the top 4 tiles directly from the server.
-
-​2. Advanced Gallery & Search
-
-​Hero Search UI: An intuitive search bar to filter tiles by title instantly.
-
-​Detailed View: A dedicated high-resolution preview page for every tile, including materials, dimensions, and descriptions.
-
-​3. Secure Authentication (BetterAuth)
-
-​Google Social Login: One-click authentication for a seamless user experience.
-
-​Email/Password: Traditional registration and login flow.
-
-​Protected Routes: User-specific pages like 'My Profile' are secured.
-
-​4. User Profile Management
-
-​Profile Dashboard: View logged-in user details.
-
-​Update Info: Dedicated route to update user name and profile image URL via BetterAuth's user management system.
-
-​5. Technical Excellence
-
-​Full Responsiveness: Optimized for Mobile, Tablet, and Desktop views.
-
-​Zero-Downtime Reloading: Configured for Vercel to prevent 404 errors on route refreshing.
-
-​Clean Code: Follows a modular component structure with meaningful git commits.
 
 
 
