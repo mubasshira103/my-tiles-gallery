@@ -1,6 +1,5 @@
 import TilesCard from '@/component/TilesCard';
 import React from 'react';
-import { FiSearch } from 'react-icons/fi';
 
 const AllTilesPage = async () => {
   const res = await fetch('https://my-tiles-gallery-five.vercel.app/data.json');
@@ -9,7 +8,7 @@ const AllTilesPage = async () => {
   return (
     <div className="max-w-11/12 mx-auto">
       <h1 className="text-2xl text-black text-center m-10 font-bold ">All Photos</h1>
-      <div className="flex justify-center mb-8 md:mb-12">
+      {/* <div className="flex justify-center mb-8 md:mb-12">
         <div className="relative w-full max-w-md">
           <input
             type="text"
@@ -20,7 +19,7 @@ const AllTilesPage = async () => {
           />
           <FiSearch className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 text-lg md:text-xl" />
         </div>
-      </div>
+      </div> */}
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-3 sm:gap-3">
         {data.map((tiles) => (
           <TilesCard key={tiles.id} tiles={tiles}></TilesCard>

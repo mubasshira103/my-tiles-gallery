@@ -37,16 +37,21 @@ export function UpdateUserModal() {
                     <Label className=" text-gray-800">Name</Label>
                     <Input placeholder="Enter your name" />
                   </TextField>
+
                   <TextField className="w-full" name="image" type="url">
                     <Label className=" text-gray-800">Image URL</Label>
                     <Input placeholder="Image URL" />
                   </TextField>
 
                   <Modal.Footer>
-                    <Button className= 'border text-blue-800 border-blue-700' slot="close" variant="secondary ">
+                    <Button
+                      className="border text-blue-800 border-blue-700"
+                      slot="close"
+                      variant="secondary "
+                    >
                       Cancel
                     </Button>
-                    <Button className='bg-blue-500' type="submit" slot="close">
+                    <Button className="bg-blue-500" type="submit" slot="close">
                       Save
                     </Button>
                   </Modal.Footer>

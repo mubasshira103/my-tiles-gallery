@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8 text-center sm:text-left">
           <div className="flex flex-col items-center sm:items-start justify-center">
             <span className="font-extrabold text-4xl sm:text-5xl leading-normal py-2">
-              Tiles <span className="text-blue-500">Gallery</span>
+              Tiles<span className="text-blue-500">Gallery</span>
             </span>
             <p className="mt-2 text-sm text-gray-600 dark:text-gray-400 max-w-xs mx-auto sm:mx-0">
               {/* Add description here if needed */}
@@ -61,7 +61,7 @@ const Footer = () => {
                   href="https://www.instagram.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className='btn rounded-full'
+                  className="btn rounded-full"
                 >
                   <FaInstagram size={18} />
                 </Link>

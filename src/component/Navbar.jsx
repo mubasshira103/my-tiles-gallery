@@ -58,7 +58,7 @@ const Navbar = () => {
 
             <div className="flex-shrink-0">
               <Link href="/" className="text-black font-extrabold text-3xl">
-                Tiles <span className="text-blue-500">Gallery</span>
+                Tiles<span className="text-blue-500">Gallery</span>
               </Link>
             </div>
           </div>
