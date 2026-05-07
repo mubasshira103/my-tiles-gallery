@@ -5,8 +5,9 @@ import PremiumTiles from '@/component/PremiumTiles';
 export default function Home() {
   return (
     <div>
+     
       <Banner></Banner>
-      
+
       <BreakingNew></BreakingNew>
 
       <PremiumTiles></PremiumTiles>

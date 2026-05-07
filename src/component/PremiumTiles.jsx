@@ -14,7 +14,7 @@ const PremiumTiles = async () => {
           tilesData.map((tiles)=>(<TilesCard key={tiles.id} tiles={tiles}></TilesCard>))
         }
       </div>
-      <div className='p-9 m-9 text-center'>
+      <div className='p-9 mt-4 mb-9  text-center'>
         <Link href="/all-tiles">
         <button className='btn bg-blue-500 text-white'>Vew All</button>
         </Link>
