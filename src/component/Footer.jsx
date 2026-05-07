@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-base-300 text-base-content border-t border-gray-200/20 w-full mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8 text-center sm:text-left">
+        <div className="grid grid-cols-1  md:grid-cols-3 gap-8 mb-8 text-center sm:text-left">
           <div className="flex flex-col items-center sm:items-start justify-center">
             <span className="font-extrabold text-4xl sm:text-5xl leading-normal py-2">
               Tiles<span className="text-blue-500">Gallery</span>
