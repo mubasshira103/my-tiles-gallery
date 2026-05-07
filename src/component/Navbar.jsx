@@ -11,6 +11,7 @@ const Navbar = () => {
 
   const handleSignOut = async () => {
     await authClient.signOut();
+    alert('Sign out successfully');
   };
   return (
     <div className="bg-base-300 shadow-sm w-full">
@@ -97,19 +98,22 @@ const Navbar = () => {
             {!user && (
               <ul className="flex items-center  text-sm gap-5">
                 <li>
-                 <Button className='bg-blue-600 rounded-xl'> <Link href={'/register'}>SignUp</Link></Button>
+                  <Button className="bg-blue-600 rounded-xl">
+                    {' '}
+                    <Link href={'/register'}>SignUp</Link>
+                  </Button>
                 </li>
                 <li>
-                  <Button className='bg-blue-600 rounded-xl'><Link href={'/login'}>
-                    SignIn
-                  </Link></Button>
+                  <Button className="bg-blue-600 rounded-xl">
+                    <Link href={'/login'}>SignIn</Link>
+                  </Button>
                 </li>
               </ul>
             )}
 
             {user && (
               <div className="flex gap-3">
-                <div className=' border-2 border-blue-500 rounded-full'>
+                <div className=" border-2 border-blue-500 rounded-full">
                   <Avatar size="sm">
                     <Avatar.Image alt="John Doe" src={user?.image} referrerPolicy="no-referrer" />
                     <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>

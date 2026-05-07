@@ -28,7 +28,7 @@ const RegisterPage = () => {
     }
 
     if (data) {
-      alert('Signup successful');
+      alert('Signup successfully');
       router.push('login');
     }
   };
