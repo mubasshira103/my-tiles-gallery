@@ -21,7 +21,7 @@ const RegisterPage = () => {
       password: userData.password, // required
       image: userData.photoUrl,
 
-      callbackURL: '/',
+      autoSignIn: false,
     });
     if (error) {
       alert(error.message);
